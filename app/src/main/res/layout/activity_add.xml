@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pnj.uts.Muhammad_Zaki_Hanif.AddActivity"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIM"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNamaAlumni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Nama Alumni"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etNim" />
+
+    <EditText
+        android:id="@+id/etTempatLahir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Tempat Lahir"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etNamaAlumni" />
+
+    <EditText
+        android:id="@+id/etTanggalLahir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Tanggal Lahir"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etTempatLahir" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Alamat"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etTanggalLahir" />
+
+    <EditText
+        android:id="@+id/etAgama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Agama"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat" />
+
+    <EditText
+        android:id="@+id/etTelp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Telp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etAgama" />
+
+    <EditText
+        android:id="@+id/etTahunMasuk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Tahun Masuk"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etTelp" />
+
+    <EditText
+        android:id="@+id/etTahunLulus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Tahun Lulus"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etTahunMasuk" />
+
+    <EditText
+        android:id="@+id/etPekerjaan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Pekerjaan"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etTahunLulus" />
+
+    <EditText
+        android:id="@+id/etJabatan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Jabatan"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNim"
+        app:layout_constraintStart_toStartOf="@+id/etNim"
+        app:layout_constraintTop_toBottomOf="@+id/etPekerjaan" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Simpan"
+        app:layout_constraintEnd_toEndOf="@+id/etPekerjaan"
+        app:layout_constraintStart_toStartOf="@+id/etPekerjaan"
+        app:layout_constraintTop_toBottomOf="@+id/etJabatan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

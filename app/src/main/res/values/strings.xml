@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pendataan Alumni</string>
+    <string name="deskripsi">Aplikasi pendataan alumni yang membantu untuk mencatat data alumni dengan mudah.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
